@@ -9,8 +9,8 @@ html { box-sizing: border-box; }
 .gallery{
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    
-    gap: 40px;
+    grid-auto-rows: auto;
+    gap: 20px;
 }
 
 .gallery__places img{
