@@ -5,3 +5,53 @@ html { box-sizing: border-box; }
     padding: 0;
     margin: 0;
 }
+
+.button1, .button2{
+    padding: 40px 60px 10px 60px;
+    margin: 10px;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    }
+
+@media screen and (min-width: 640px){
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.button1, .button2{
+    font-size: 20px
+}
+
+.page__image{
+    width: 100%;
+}
+
+    }
+
+    @media screen and (min-width: 1100px){
+body{
+    background-color: rgb(159, 141, 127);
+    background-image: url("/images/background_site.png");
+    background-repeat: repeat-x;
+    background-size: 65%;
+    display: grid;
+}
+
+.page__image{
+    width: 35%;
+}
+
+.navigation{
+    margin-left: 70%;
+    margin-top: 6%;
+    font-size: 40px;
+}
+
+}
