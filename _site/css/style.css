@@ -1,57 +1,119 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
-*{
-    padding: 0;
-    margin: 0;
+html {
+    box-sizing: border-box;
 }
 
-.button1, .button2{
-    padding: 40px 60px 10px 60px;
-    margin: 10px;
-    background-color: #F0F0F0;
-    border-radius: 15px;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    font-weight: 600;
-    }
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
 
-@media screen and (min-width: 640px){
-.navigation{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #DCC6C6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-}
-
-.button1, .button2{
-    font-size: 20px
-}
-
-.page__image{
     width: 100%;
 }
 
-    }
-
-    @media screen and (min-width: 1100px){
-body{
-    background-color: rgb(159, 141, 127);
-    background-image: url("/images/background_site.png");
-    background-repeat: repeat-x;
-    background-size: 65%;
-    display: grid;
+.header {
+    margin: 50px;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
 }
 
-.page__image{
-    width: 35%;
+.headerlink{
+    text-decoration: none;
+    color: #F0F0F0;
 }
 
 .navigation{
-    margin-left: 70%;
-    margin-top: 6%;
-    font-size: 40px;
+    margin-bottom: 5%;
 }
+
+.button1,
+.button2 {
+    padding: 20px 80px;
+    margin: 10px;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.pageimage {
+    max-width: 100%;
+}
+
+.galleryplaces{
+    padding: 20px;
+    border: 2px dotted grey;
+}
+
+.footer{
+    padding: 40px;
+    color: #F0F0F0;
+    background-color: #6B6565;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+
+    .button1,
+    .button2 {
+        display: inline-block; 
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .gallery img{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        background-color: rgb(159, 141, 127);
+        background-image: url("/images/background_site.png");
+        background-repeat: repeat-x;
+        background-size: 65%;
+        display: grid;
+    }
+
+    .pageimage {
+        width: 35%;
+    }
+
+    .navigation {
+        margin-left: 70%;
+        margin-top: 6%;
+        font-size: 40px;
+    }
+
+    .gallery img{
+        max-width: calc(100%/3);
+        flex-wrap: wrap; 
+    }
+    
+
 
 }
