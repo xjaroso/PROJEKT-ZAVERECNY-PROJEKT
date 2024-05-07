@@ -18,6 +18,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    font-size: 22px;
     background-color: #DCC6C6;
     display: flex;
     flex-direction: column;
@@ -39,8 +40,13 @@ body {
     color: #F0F0F0;
 }
 
-.navigation, .navigationgallery{
+.navigation, .navigationgallery, .navigation__link{
     margin-bottom: 5%;
+}
+
+.navigation__link{
+    color: #F0F0F0;
+    float: right;
 }
 
 .button1,
@@ -55,10 +61,19 @@ body {
     font-weight: 600;
 }
 
+/* NEFUNGUJE AKTUÁLNĚ, PROTOŽE NEVÍM JAK JE STATUS AKTIVNÍ */
+/* .button1:active,
+.button2:active{
+    background-color: transparent;
+    color:#6B6565;
+    border: #6B6565 2px solid;
+} */
+
 .navigationgallery{
     color: #DCC6C6;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .pageimage {
     max-width: 100%;
