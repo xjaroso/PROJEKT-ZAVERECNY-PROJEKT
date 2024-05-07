@@ -39,7 +39,7 @@ body {
     color: #F0F0F0;
 }
 
-.navigation{
+.navigation, .navigationgallery{
     margin-bottom: 5%;
 }
 
@@ -54,6 +54,11 @@ body {
     color: black;
     font-weight: 600;
 }
+
+.navigationgallery{
+    color: #DCC6C6;
+}
+
 
 .pageimage {
     max-width: 100%;
@@ -86,7 +91,6 @@ body {
         display: flex;
         flex-wrap: wrap;
     }
-    
 
 }
 
