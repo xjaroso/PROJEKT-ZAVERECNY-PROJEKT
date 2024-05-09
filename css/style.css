@@ -13,12 +13,13 @@ html {
     padding: 0;
 }
 
+/* HLAVNÍ KOSTRA STRÁNKY */
+/* -------------------------- */
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 160%;
     background-color: #DCC6C6;
     text-align: center;
     display: flex;
@@ -28,48 +29,52 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 1100px) {
-    body {
-        background-color: #F0F0F0;
-        background-image: url("/images/background_site.png");
-        background-repeat: repeat-x; 
-        background-size: 60%;
-        font-size: 150%;
-    }
+main{
+    background-color: #F0F0F0;
+    padding: 30px;
 }
+/* -------------------------- */
 
-h1{
-    margin: 5% 5%;
-}
-
+/* HLAVIČKA STRÁNKY */
+/* -------------------------- */
 .header {
     margin: 50px;
     font-weight: 800;
     font-style: italic;
     font-size: 30px;
     text-align: center;
-    font-size: 350%;
+    font-size: 500%;
     font-family: "Just Another Hand", cursive;
     font-weight: 400;
     font-style: italic;
 }
-
 
 .headerlink{
     text-decoration: none;
     color: black;
 }
 
+.header::after, .header::before {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 10px;
+    background-color: #6B6565;
+}
+/* -------------------------- */
+
+/* NAVIGACE STRÁNKY */
+/* -------------------------- */
 @media screen and (max-width: 1100px) {
 .navigation, .navigationgallery, .navigation__link, .navigationlist{
     margin-bottom: 5%;
-}
+    }
 }
 
-@media screen and (min-width: 1100px) {
-    .navigation, .navigationgallery, .navigation__link, .navigationlist{
-        margin-bottom: 3%;
-    }
+.navigation{
+    background-color: #DCC6C6;
 }
 
 .navigation__link{
@@ -102,8 +107,6 @@ h1{
     color: black;
     font-weight: 600;
 }
-
-
 @media screen and (max-width: 1100px) {
     .button1,
     .button2 {    
@@ -112,15 +115,28 @@ h1{
         font-size: 20px;       
     }
 }
+/* -------------------------- */
 
+/* NASTAVENÍ NADPISŮ */
+/* -------------------------- */
+h1{
+    margin: 5% 5%;
+}
+/* -------------------------- */
+
+/* NASTAVENÍ ČLÁNKŮ */
+/* -------------------------- */
 .article{
     margin: 5%;
 }
+/* -------------------------- */
 
+/* VRACENÍ ZPĚT */
 .return{
     float: left;
     margin: 2%;
 }
+/* -------------------------- */
 
 /* NEFUNGUJE AKTUÁLNĚ, PROTOŽE NEVÍM JAK JE STATUS AKTIVNÍ */
 /* .button1:active,
@@ -130,9 +146,22 @@ h1{
     border: #6B6565 2px solid;
 } */
 
+
+/* ----PODSTRÁNKY---- */
+
+/* SEKCE O MNĚ */
+/* -------------------------- */
+@media screen and (max-width: 1100px) {
+    .aboutimage, .abouttext{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .aboutimage img{
     border-radius: 40%;
-    width: 100%;
+    align-self: center;
+    width: 80%;
 }
 
 .aboutimage, .abouttext{
@@ -143,7 +172,10 @@ h1{
     margin: 4%; 
     padding: 4%;
 }
+/* -------------------------- */
 
+/* MOJE CESTY */
+/* -------------------------- */
 .navigationgallery{
     color: #DCC6C6;
     display: flex;
@@ -155,7 +187,11 @@ h1{
 .navigationgallery{
    margin-top: 50px;
    text-align: left;
-}
+    }
+
+.gallery img{
+    width: calc((100% - 100px) /3);
+    }
 }
 
 .pageimage {
@@ -173,21 +209,6 @@ h1{
     }
 } */
 
-@media screen and (min-width: 1100px) {
-.gallery img{
-    max-width: calc(100%/4);
-}
-}
-
-.footer{
-    padding: 40px;
-    color: #F0F0F0;
-    background-color: #6B6565;
-    width: 100%;
-    text-align: center;
-}
-
-/* napad pro najeti mysi na jednotlive obrazky */
 .galleryplaces1:hover, .galleryplaces2:hover, .galleryplaces3:hover,
 .galleryplaces4:hover, .galleryplaces5:hover, .galleryplaces6:hover{
     opacity: 80%;
@@ -201,6 +222,18 @@ h1{
         display: flex;
         flex-wrap: wrap;
     }
-
 }
+/* -------------------------- */
+
+/* ZÁPATÍ */
+/* -------------------------- */
+.footer{
+    padding: 40px;
+    color: #F0F0F0;
+    background-color: #6B6565;
+    width: 100%;
+    text-align: center;
+}
+/* -------------------------- */
+
 
