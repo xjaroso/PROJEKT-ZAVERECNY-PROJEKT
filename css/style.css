@@ -20,7 +20,7 @@ body {
     font-optical-sizing: auto;
     background-color: #DCC6C6;
     text-align: center;
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -54,15 +54,11 @@ main{
 .page{
     display: flex;
     width: 100%;
-  
 }
 
 .pageimage1, .pageimage2{
-    width: 60%;
-    float: left;
-    overflow: auto;
+    width: 75%;
     margin: 20px;
-    display: block;
 }
 
 .article1, .article2{
@@ -136,7 +132,7 @@ main{
 .button1,
 .button2 {
     display: inline-block;
-    padding: 10px 70px;
+    padding: 10px 60px;
     margin: 0 10px;
     background-color: #F0F0F0;
     border-radius: 15px;
@@ -176,6 +172,7 @@ h1::after {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 50%;
     height: 3px;
     background-color: #6B6565;
@@ -258,7 +255,7 @@ h1::after {
     }
 
 .gallery img{
-    width: calc((100% - 100px) /3);
+    width: calc((100% - 50px) /3);
     }
 }
 
