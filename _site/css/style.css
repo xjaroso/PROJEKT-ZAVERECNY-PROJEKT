@@ -18,13 +18,28 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 22px;
+    font-size: 160%;
     background-color: #DCC6C6;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        background-color: #F0F0F0;
+        background-image: url("/images/background_site.png");
+        background-repeat: repeat-x; 
+        background-size: 60%;
+        font-size: 150%;
+    }
+}
+
+h1{
+    margin: 5% 5%;
 }
 
 .header {
@@ -33,11 +48,16 @@ body {
     font-style: italic;
     font-size: 30px;
     text-align: center;
+    font-size: 350%;
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: italic;
 }
+
 
 .headerlink{
     text-decoration: none;
-    color: #F0F0F0;
+    color: black;
 }
 
 @media screen and (max-width: 1100px) {
@@ -48,7 +68,7 @@ body {
 
 @media screen and (min-width: 1100px) {
     .navigation, .navigationgallery, .navigation__link, .navigationlist{
-        margin-bottom: 2%;
+        margin-bottom: 3%;
     }
 }
 
@@ -84,6 +104,24 @@ body {
 }
 
 
+@media screen and (max-width: 1100px) {
+    .button1,
+    .button2 {    
+       display: inline-block; 
+        width: 90%;
+        font-size: 20px;       
+    }
+}
+
+.article{
+    margin: 5%;
+}
+
+.return{
+    float: left;
+    margin: 2%;
+}
+
 /* NEFUNGUJE AKTUÁLNĚ, PROTOŽE NEVÍM JAK JE STATUS AKTIVNÍ */
 /* .button1:active,
 .button2:active{
@@ -92,35 +130,54 @@ body {
     border: #6B6565 2px solid;
 } */
 
+.aboutimage img{
+    border-radius: 40%;
+    width: 100%;
+}
+
+.aboutimage, .abouttext{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    margin: 4%; 
+    padding: 4%;
+}
+
 .navigationgallery{
     color: #DCC6C6;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 1100px) {
+.navigationgallery{
+   margin-top: 50px;
+   text-align: left;
+}
 }
 
 .pageimage {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .galleryplaces{
-    padding: 20px;
     margin: 50px;
 }
 
-@media screen and (max-width: 1100px) {
+/* POTŘEBUJI OPRAVIT NĚJAK FLEXBOXEM NEBO NĚČÍM, ABY SE TO PĚKNĚ SKLÁDALO */
+/* @media screen and (max-width: 1100px) {
     .gallery img{
         max-width: calc(70%/2);
     }
-}
+} */
 
 @media screen and (min-width: 1100px) {
 .gallery img{
     max-width: calc(100%/4);
 }
 }
-
-
 
 .footer{
     padding: 40px;
@@ -139,14 +196,6 @@ body {
 } 
 
 @media screen and (max-width: 1100px) {
-
-    .button1,
-    .button2 {
-        display: inline-block; 
-        width: 90%;
-        font-size: 20px;
-    }
-
     .gallery img{
         max-width: 100%;
         display: flex;
@@ -155,12 +204,3 @@ body {
 
 }
 
-@media screen and (min-width: 1100px) {
-    body {
-        background-color: #F0F0F0;
-        background-image: url("/images/background_site.png");
-        background-repeat: repeat-x;
-        background-size: 60%;
-    }
-
-}
