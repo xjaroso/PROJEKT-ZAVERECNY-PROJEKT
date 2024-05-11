@@ -21,7 +21,7 @@ body {
   font-optical-sizing: auto;
   background-color: #DCC6C6;
   text-align: center;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -29,7 +29,7 @@ body {
 
 main {
   background-color: #F0F0F0;
-  padding: 40px;
+  padding: 50px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -73,7 +73,7 @@ main {
   font-style: italic;
   font-size: 30px;
   text-align: center;
-  font-size: 500%;
+  font-size: 350%;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -104,13 +104,13 @@ main {
 }
 .navigation {
   background-color: #DCC6C6;
-  width: 80%;
+  width: 90%;
 }
 
 .navigation__link_white {
   color: #F0F0F0;
   float: right;
-  padding: 20px 40px;
+  padding: 20px 50px;
 }
 
 .navigationlist a {
@@ -138,7 +138,7 @@ main {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1100px) {
