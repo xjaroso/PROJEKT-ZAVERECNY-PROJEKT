@@ -43,7 +43,6 @@ main {
   }
   .pageimage1, .pageimage2 {
     width: 100%;
-    margin: 20px;
     display: block;
   }
   .article1, .article2 {
@@ -59,12 +58,12 @@ main {
   }
   .pageimage1, .pageimage2 {
     width: 100%;
-    margin: 20px;
   }
   .article1, .article2 {
     border: #6B6565 2px dashed;
     padding: 30px;
     margin: 10px;
+    width: 100%;
   }
 }
 /* -------------------------- */
@@ -202,12 +201,14 @@ h1::after {
 
 /* -------------------------- */
 /* NEFUNGUJE AKTUÁLNĚ, PROTOŽE NEVÍM JAK JE STATUS AKTIVNÍ */
-/* .button1:active,
-.button2:active{
+@media screen and (max-width: 1100px) {
+  .button1:focus,
+  .button2:focus {
     background-color: transparent;
-    color:#6B6565;
+    color: #6B6565;
     border: #6B6565 2px solid;
-} */
+  }
+}
 /* ----PODSTRÁNKY---- */
 /* SEKCE O MNĚ */
 /* -------------------------- */
@@ -243,9 +244,6 @@ h1::after {
 }
 
 @media screen and (min-width: 1100px) {
-  .navigationgallery {
-    text-align: left;
-  }
   .gallery img {
     width: calc((100% - 50px) / 3);
   }
@@ -260,12 +258,6 @@ h1::after {
   border: 2px black dashed;
 }
 
-/* POTŘEBUJI OPRAVIT NĚJAK FLEXBOXEM NEBO NĚČÍM, ABY SE TO PĚKNĚ SKLÁDALO */
-/* @media screen and (max-width: 1100px) {
-    .gallery img{
-        max-width: calc(70%/2);
-    }
-} */
 .galleryplaces1:hover, .galleryplaces2:hover, .galleryplaces3:hover,
 .galleryplaces4:hover, .galleryplaces5:hover, .galleryplaces6:hover {
   opacity: 70%;
