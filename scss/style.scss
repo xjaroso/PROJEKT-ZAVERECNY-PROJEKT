@@ -18,7 +18,7 @@ $secondary_color: #F0F0F0;
 $link_color:  #6B6565;
 $font_main: "Montserrat", sans-serif;
 $font_special: "Amatic SC", sans-serif;
-$main_padding: 50px;
+$main_padding: 30px;
 
 
 /* HLAVNÍ KOSTRA STRÁNKY */
@@ -130,16 +130,17 @@ body{
     padding: 20px $main_padding;
 }
 
-.navigationlist a{
+.navigationlist{
+a{
     text-align: center;
     text-decoration: none;
     color: black;
     display: block;
     margin: 10px;
 }
-
-.navigationlist a:hover{
+a:hover{
     font-size: 150%;
+}
 }
 
 .button1,
