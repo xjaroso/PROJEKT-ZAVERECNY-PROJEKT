@@ -21,7 +21,7 @@ body {
   font-optical-sizing: auto;
   background-color: #DCC6C6;
   text-align: center;
-  width: 70%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -33,13 +33,16 @@ main {
 }
 
 @media screen and (max-width: 1100px) {
+  body {
+    width: 100%;
+  }
   .page {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
   .pageimage1, .pageimage2 {
-    width: 80%;
+    width: 100%;
     margin: 20px;
     display: block;
   }
@@ -55,7 +58,7 @@ main {
     width: 100%;
   }
   .pageimage1, .pageimage2 {
-    width: 75%;
+    width: 100%;
     margin: 20px;
   }
   .article1, .article2 {
