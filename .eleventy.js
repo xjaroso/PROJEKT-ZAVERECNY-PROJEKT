@@ -17,5 +17,9 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
   }
+  
+};
 
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("bundle.js");
 };
