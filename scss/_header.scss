@@ -1,0 +1,28 @@
+@use 'sass';
+
+.header {
+    margin: 50px;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    font-size: 350%;
+    font-family: sass.$font_special;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.headerlink{
+    text-decoration: none;
+    color: black;
+}
+
+.header::after, .header::before {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 10px;
+    background-color: sass.$link_color;
+}

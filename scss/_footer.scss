@@ -1,0 +1,9 @@
+@use 'sass';
+
+.footer{
+    padding: 40px;
+    color: #F0F0F0;
+    background-color: sass.$link_color;
+    width: 100%;
+    text-align: center;
+}

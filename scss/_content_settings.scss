@@ -1,0 +1,64 @@
+@use 'sass';
+h1 {
+    margin: 5% 2%;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    height: 3px;
+    background-color: sass.$link_color;
+}
+
+.article {
+    margin: 5%;
+}
+
+.article::before, .article::after {
+    content: "";
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 1px;
+    background-color: sass.$link_color;
+}
+
+.return{
+    float: left;
+    padding: 20px;
+    display: block;
+}
+
+/* SEKCE O MNĚ */
+/* -------------------------- */
+@media screen and (max-width: 1100px) {
+    .aboutimage, .abouttext{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+}
+
+.aboutimage img{
+    border-radius: 40%;
+    align-self: center;
+    width: 40%;
+}
+
+.aboutimage, .abouttext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    margin: 4%; 
+    padding: 4%;
+}
+
+/* -------------------------- */
