@@ -236,8 +236,9 @@ h1::after {
 /* -------------------------- */
 @media screen and (max-width: 1100px) {
     .aboutimage, .abouttext{
-        display: flex;
-        flex-direction: column;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
     }
 }
 

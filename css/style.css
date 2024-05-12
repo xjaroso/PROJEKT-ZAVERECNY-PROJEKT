@@ -216,6 +216,7 @@ h1::after {
   .aboutimage, .abouttext {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 .aboutimage img {
