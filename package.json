@@ -1,7 +1,6 @@
 {
   "name": "projekt-zaverecny-projekt",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -15,5 +14,6 @@
   },
   "dependencies": {
     "fslightbox": "^3.4.1"
-  }
+  },
+  "description": ""
 }
