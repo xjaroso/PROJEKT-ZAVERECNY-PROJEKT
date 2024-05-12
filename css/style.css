@@ -226,6 +226,7 @@ h1::after {
 
 .aboutimage, .abouttext {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   text-align: left;
