@@ -36,7 +36,7 @@ main {
   }
   .page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     border: #1d1b1b 2px dashed;
     padding: 30px;
@@ -51,7 +51,7 @@ main {
   .page {
     display: flex;
     flex-direction: column;
-    width: 66.6666666667%;
+    width: 100%;
     border: #6B6565 2px dashed;
     padding: 30px;
     margin: 10px;
@@ -215,14 +215,10 @@ h1::after {
   background-color: #6B6565;
 }
 
-.article {
-  margin: 5%;
-}
-
 .return {
   float: left;
   padding: 20px;
-  display: block;
+  margin: 20px;
 }
 
 /* SEKCE O MNĚ */

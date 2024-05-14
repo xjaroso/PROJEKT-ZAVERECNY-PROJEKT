@@ -37,7 +37,7 @@ body{
 }
     .page{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         border: #1d1b1b 2px dashed;
         padding: sass.$main_padding;
@@ -55,7 +55,7 @@ body{
 .page{
     display: flex;
     flex-direction: column;
-    width: calc(100% / 1.5);
+    width: 100%;
     border: sass.$link_color 2px dashed;
     padding: sass.$main_padding;
     margin: 10px;
