@@ -7,14 +7,12 @@ layout: main_page.njk
   <main class="main">
   
 <section class="page">
-  <div class="article1">
-
-   
-  <img class="pageimage1" src="/images/articles/{{foto}}" alt="Foto">
+  <div class="article">
+  <img class="pageimage" src="/images/articles/{{foto}}" alt="Foto">
 <h1 style="display: block;">   {{ title }} </h1>
 
-<p> Publikováno {{ page.date.toLocaleString('cs-CZ') }}
-
+<p> Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+<br>
 <p>{{ perex }}</p>
 <br>
   {{ content | safe }}
