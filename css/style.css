@@ -38,29 +38,26 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .pageimage1, .pageimage2 {
-    width: 100%;
-    display: block;
-  }
-  .article1, .article2 {
     border: #1d1b1b 2px dashed;
     padding: 30px;
     margin: 10px;
+  }
+  .pageimage {
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 1100px) {
   .page {
     display: flex;
+    flex-direction: column;
     width: 100%;
-  }
-  .pageimage1, .pageimage2 {
-    width: 100%;
-  }
-  .article1, .article2 {
     border: #6B6565 2px dashed;
     padding: 30px;
     margin: 10px;
+    width: 100%;
+  }
+  .pageimage {
     width: 100%;
   }
 }
@@ -88,29 +85,25 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .pageimage1, .pageimage2 {
-    width: 100%;
-    display: block;
-  }
-  .article1, .article2 {
     border: #1d1b1b 2px dashed;
     padding: 30px;
     margin: 10px;
+  }
+  .pageimage {
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 1100px) {
   .page {
     display: flex;
-    width: 100%;
-  }
-  .pageimage1, .pageimage2 {
-    width: 100%;
-  }
-  .article1, .article2 {
+    flex-direction: column;
+    width: 66.6666666667%;
     border: #6B6565 2px dashed;
     padding: 30px;
     margin: 10px;
+  }
+  .pageimage {
     width: 100%;
   }
 }
