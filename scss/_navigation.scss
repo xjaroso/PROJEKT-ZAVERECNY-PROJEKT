@@ -1,5 +1,11 @@
 @use 'sass';
 
+.return {
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
 @media screen and (max-width: 1100px) {
     .navigation, .navigationgallery, .navigation__link_beige, .navigationlist{
         margin-bottom: 5%;
@@ -10,12 +16,18 @@
         background-color: sass.$primary_color;
         width: 90%;
     }
+
+    .navigation__link_white a{
+        color: sass.$primary_color;
+        font-size: 120%;
+    }
+
     .navigation__link_white{
         color: sass.$secondary_color;
         float: right;
         padding: 20px sass.$main_padding;
     }
-    
+
     .navigationlist{
     a{
         text-align: center;

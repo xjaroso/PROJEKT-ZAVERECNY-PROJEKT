@@ -5,14 +5,14 @@ title: Cestování Zuzky
 <h2>Poslední příspěvky</h2>
 
 <div class="page">
-{% for post in collections.article %}
+  {% for post in collections.article %}
 
-<h1>{{ post.data.title }}</h1>
-<p>{{ post.data.perex }}</p>
-<br>
-<img class="pageimage" src="/images/articles/{{ post.data.foto}}" alt="Foto">
-<a class="navigation__link_beige" href="{{post.url}}">Číst dále &rarr;</a>
+  <h1>{{ post.data.title }}</h1>
+  <p>{{ post.data.perex }}</p>
+  <br>
+  <img class="pageimage" src="/images/articles/{{ post.data.foto }}" alt="Foto">
+  <a class="navigation__link_beige" href="{{ post.url }}">Číst dále &rarr;</a>
 
-{% endfor %}
+  {% endfor %}
 </div>
 <a class="navigation__link_beige" href="/gallery">Další příspěvky v sekci Cesty &rarr;</a>
